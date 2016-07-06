@@ -1,8 +1,93 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="main.sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="43.0" layoutY="14.0" prefHeight="198.0" prefWidth="513.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="252.0" minWidth="10.0" prefWidth="75.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="10.0" prefWidth="187.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="ID:" textFill="#212121">
+               <font>
+                  <Font name="Calibri Light" size="17.0" />
+               </font>
+            </Label>
+            <TextField id="txtid" fx:id="txtid" prefHeight="25.0" prefWidth="204.0" GridPane.columnIndex="1" />
+            <TextField id="txtpatrimonio" fx:id="txtpatrimonio" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="PatrimÃ´nio:" textFill="#212121" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri Light" size="17.0" />
+               </font>
+            </Label>
+            <TextField id="txtnome" fx:id="txtnome" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Nome:" textFill="#212121" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri Light" size="17.0" />
+               </font>
+            </Label>
+            <TextField id="txtdescricao" fx:id="txtdescricao" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="DescriÃ§Ã£o:" textFill="#212121" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri Light" size="17.0" />
+               </font>
+            </Label>
+            <TextField id="txtlocal" fx:id="txtlocal" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Local de uso:" textFill="#212121" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Calibri Light" size="17.0" />
+               </font>
+            </Label>
+            <TextField id="txtmarca" fx:id="txtmarca" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Marca:" textFill="#212121" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Calibri Light" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <HBox layoutX="120.0" layoutY="282.0" prefHeight="86.0" prefWidth="360.0">
+         <children>
+            <Button id="btadicionar" fx:id="btadicionar" mnemonicParsing="false" prefHeight="50.0" prefWidth="115.0" text="ADICIONAR" textFill="#212121">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri Light" size="17.0" />
+               </font>
+            </Button>
+            <Button id="btexcluir" fx:id="btexcluir" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="EXCLUIR" textFill="#212121">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri Light" size="17.0" />
+               </font>
+            </Button>
+            <Button id="btalterar" fx:id="btalterar" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="ALTERAR" textFill="#212121">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri Light" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
